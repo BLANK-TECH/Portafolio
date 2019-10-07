@@ -12,24 +12,30 @@
     <title>Ivon_Garduño</title>
 </head>
 <body class="body">
-    <navbar>
+    <navbar id="navbar">
         <i class="fas fa-bars" class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button">Home</button>
           <button class="dropdown-item" type="button">Acerca de mí</button>
           <button class="dropdown-item" type="button">Skills</button>
           <button class="dropdown-item" type="button">Proyectos</button>
           <button class="dropdown-item" type="button">Contacto</button>
         </div>
     </navbar>
-    <section class="About-me"></section>
-
+    <main>
+    <section id="home">
+        <h4>Blanca Ivon Garduño</h4>
+        <h5>Front-End Development</h5>
+    </section>
+    <section id="about-me">
         <figure>
             <img src="./img/ivon_foto[1] copia.png" alt="Ivon">
         </figure>
-        <p>Desarrolladora Front-End con un gusto genuino por la programación y el reto mental. 
+        <h5 id="text-aboutme">Desarrolladora Front-End apasionada por la programación y el reto mental. 
         Autodidacta, persistente y entusiasta por el mundo Tech.<br><br>
-        Resiliencia y Responsabilidad son los valores que me definen y guían.    
-        </p>
+        Tenacidad y Liderazgo son habilidades que práctico para lograr mis objetivos.    
+        </h5>
+    </section>
     </main>
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
