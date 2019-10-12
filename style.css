@@ -49,11 +49,12 @@
 
 body main figure img{
     margin-top: 20%;
-    margin-left: 30%;
+    margin-left: 27%;
+
 }
 #about-me{
     height: 90vh; 
-    background-color: rgb(139, 140, 128);
+    background-color: rgb(140, 166, 114);
 }
 #text-aboutme{
     margin-top: 10%;
