@@ -1,15 +1,12 @@
+//ANIME
 const img = anime({
     targets: '.photo',
-    // duration: 1500,
-    // translateX: [0, 40], // from 100 to 250
-    // delay: 500,
-    // direction: 'alternate',
-    // loop: true
     translateX: 30,
     direction: 'alternate',
     loop: true,
     easing: 'easeInOutQuad',
-    autoplay: false
+    autoplay: false,
+    duration: 3000
     
   });
 
@@ -19,6 +16,23 @@ const img = anime({
   }
   
   requestAnimationFrame(loop);
-  
 
-//   document.querySelector('.about-me').onclick = img.restart;
+
+//SCROLL REVEAL
+
+window.sr = ScrollReveal();
+sr.reveal('#navbar',{
+  duration:2000,
+  origin:'bootom'
+});
+
+//SMOOTH SCROLLING
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});

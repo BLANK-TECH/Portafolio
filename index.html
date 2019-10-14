@@ -10,19 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4f820322b0.js"></script>
     <script src="anime.js"></script>
-    <script src="anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Ivon_Garduño</title>
 </head>
 <body class="body">
-    <navbar id="navbar">
+    <navbar id="navbar" class="fixed-top">
         <i class="fas fa-bars" class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
         <span id="name">Blanca Ivon Garduño</span>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-          <button class="dropdown-item" type="button">Home</button>
-          <button class="dropdown-item about-me" type="button">Acerca de mí</button>
-          <button class="dropdown-item" type="button">Skills</button>
-          <button class="dropdown-item" type="button">Proyectos</button>
-          <button class="dropdown-item" type="button">Contacto</button>
+            <a href="#home" class="dropdown-item">Home</a>
+            <a href="#about-me" class="dropdown-item">Acerca de mí</a>
+            <a href="#skills" class="dropdown-item">Skills</a>
+            <a href="#" class="dropdown-item">Proyectos</a>
+            <a href="#" class="dropdown-item">Contacto</a>
         </div>
     </navbar>
     <main>
@@ -33,10 +33,71 @@
         <figure>
             <img src="./img/ivon_foto[1] copia.png" alt="Ivon" class="photo">
         </figure>
-        <h5 id="text-aboutme">Desarrolladora Front-End apasionada por la programación y el reto mental. 
-        Autodidacta, persistente y entusiasta por el mundo Tech.<br><br>
-        Tenacidad y Liderazgo son habilidades que me identifican.    
+        <h5 id="text-aboutme"><span>Desarrolladora Front-End</span> apasionada por la programación y el reto mental. 
+        De mente inquieta, apoderada de mi aprendizaje y entusiasta por el mundo Tech.<br><br>
+        Tenacidad y persistencia son actitudes que me identifican y que practico todos los días.   
         </h5>
+    </section>
+    <section id="skills" class="text-center">    
+        <div class="container-fluid mt-5">
+            
+            <div class="row mt-4">
+                <div class="col-md-1 text-center">
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-5 text-center">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="col-5 text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-1"></div>
+                <div class="col-2 text-center">
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <div class="col-6"></div>
+                <div class="col-2 text-center">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-1"></div>
+                <div class="col-2 text-center">
+                    <img src="img/firebase.png">
+                </div>
+                <div class="col-6"><p class="h4">Skills</p></div>
+                <div class="col-2 text-center">
+                    <img src="img/xd.png">
+                </div>
+                <div class="col-1"></div>
+            </div>                  
+            <div class="row mt-3">
+                <div class="col-1">
+                </div>
+                <div class="col-5 text-center">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="col-5 text-center">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="col-1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1 text-center">
+                    <img src="img/agile.png">
+                </div>
+            </div>
+        </div>
     </section>
     </main>
     <script src="main.js"></script>
