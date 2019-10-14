@@ -22,7 +22,7 @@ const img = anime({
 
 window.sr = ScrollReveal();
 sr.reveal('#navbar',{
-  duration:2000,
+  duration:3000,
   origin:'bootom'
 });
 
