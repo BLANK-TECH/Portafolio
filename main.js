@@ -22,7 +22,7 @@ const img = anime({
 
 window.sr = ScrollReveal();
 sr.reveal('#navbar',{
-  duration:3000,
+  duration:2000,
   origin:'bootom'
 });
 
@@ -35,4 +35,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           behavior: 'smooth'
       });
   });
+});
+
+var path = anime.path('#path');
+
+var motionPath = anime({
+  targets: '.el',
+  translateX: path('x'),
+  translateY: path('y'),
+  rotate: path('angle'),
+  easing: 'linear',
+  duration: 3000,
+  loop: true
 });
