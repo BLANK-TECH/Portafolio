@@ -7,8 +7,6 @@
 }
 .body{
     width: 100%;
-    /* height: 667px; */
-    /* scroll-behavior: smooth; */
 }
 
 #navbar{
@@ -23,14 +21,6 @@
     width: 40%;
 }
 
-/* #name{
-    padding-top: 12px;
-    color: rgb(191, 185, 164);
-    flex: 5;
-    font-size: 1.4rem;  
-    font-weight: bold;
-} */
-
 .fas{
     margin: 17px;
     margin-left: 20px;
@@ -39,31 +29,17 @@
     flex:1;
 }
 
-#home{
-    background-image: url('./img/home-portfolio-mobile.jpg');    width: auto;
-    height: 568px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 20%;
-    text-align: right;
-    padding-right: 10%;
-}
-
-#home h5{
-    padding-top: 20%;
-    color: rgb(108, 85, 115);
-    font-style: italic;
-}
-
 #about-me{
     width: 100%;
     height: 568px;
-    background-color: #181F17;
-    /* background-image: url('./img/home-reverse.jpg');
+    background-image: url('./img/fondo-home.png');
+    /* background-color:#181F17; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 70%; */
-    padding-top: 30px;
+    background-position-x: 20%;
+    text-align: right;   
+    padding-top: 40px;
+    background-attachment: fixed;
 }
 
 .about-me{
@@ -73,7 +49,7 @@
     margin-top: 17%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: rgba(74, 77, 74, 0.6);
+    background: rgba(74, 77, 74, 0.5);
      
 }
 
@@ -99,24 +75,34 @@
 #skills{
     width: 100%;
     height: 90vh;
+    background-image:url('./img/home-portfolio-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    /* display:flex; */
+    background-attachment: fixed;
+}
+
+#skills .fondo-skills{
     padding-top:17%;
-    background: rgb(99, 97, 97);
-    display:flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 185, 164,0.6);
 }
 
 #skills i{
     font-size: 3rem;
     color: black;
-    box-shadow: 2px 2px 10px rgb(31, 38, 29);
 }
 #skills img{
     width: 2.7rem;
     height: 2.7rem;
-    box-shadow: 2px 2px 10px rgb(31, 38, 29);
 }
-#skills p{
+
+#skills div span{
     color: black;
-    
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 
 /* #projects #motionPath path{
@@ -136,14 +122,15 @@
 #projects{
     width: 100%;
     height: 135vh;
+    background-image: url('./img/fondo-home.png');
     padding-top: 10vh;
-   
+    background-attachment: fixed;
 }
 
 #projects .tarjeta-wrap{
     width: 80%;
     height: 200px;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
     -webkit-perspective: 850;
     perspective: 850;
 }
@@ -198,4 +185,9 @@
     /* background-repeat: no-repeat; */
 }
 
+/* #skills .container-fluid div div .fa-js{
+    background-color: rgb(191, 185, 164,0.5);
+    width: 60px;
+    height: 60px;
+} */
 

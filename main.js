@@ -6,7 +6,7 @@ const img = anime({
     loop: true,
     easing: 'easeInOutQuad',
     autoplay: false,
-    duration: 3000
+    duration: 4000
     
   });
 
