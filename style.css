@@ -38,18 +38,23 @@
     margin: 30px;
 }
 
-#about-me{
+#home{
     width: 100%;
     height: 568px;
-    background-image: url('./img/fondo-home.png');
-    /* background-color:#181F17; */
+    background-image: url('./img/home-portfolio-mobile.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 20%;
+    background-attachment: fixed;
+}
+
+#about-me{
+    width: 100%;
+    height: 568px;
+    background-color:#181F17;
     text-align: right;   
     padding-top: 40px;
-    -webkit-background-attachment: fixed;
-    background-attachment: fixed;
+    
 }
 
 .about-me{
@@ -89,8 +94,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 20%;
-    /* display:flex; */
-    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 }
 
@@ -135,7 +138,6 @@
     height: 135vh;
     background-image: url('./img/fondo-home.png');
     padding-top: 10vh;
-    -webkit-background-attachment: fixed;
     background-attachment: fixed;
 }
 
