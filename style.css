@@ -47,7 +47,16 @@
     background-repeat: no-repeat;
     background-position-x: 20%;
     /* background-attachment: fixed; */
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 500px;
 }
+#home a{
+    color:white;
+    opacity:0.6;
+    text-decoration: none;
+}
+
 
 #about-me{
     width: 100%;
