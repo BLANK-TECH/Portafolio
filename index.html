@@ -19,16 +19,16 @@
         <!-- <span id="name">Blanca Ivon Garduño</span> -->
         <img src="./img/logo.png" alt="logo" id="logo">
         <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenu2">
-            <a href="#home" class="dropdown-item">Home</a>
-            <a href="#about-me" class="dropdown-item">Acerca de mí</a>
-            <a href="#skills" class="dropdown-item">Skills</a>
-            <a href="#projects" class="dropdown-item">Proyectos</a>
-            <a href="#contacto" class="dropdown-item">Contacto</a>
+            <div class="item-menu"><a href="#home" class="dropdown-item">Home<i class="fas fa-chevron-right"></i></a></div>
+            <div class="item-menu"><a href="#about-me" class="dropdown-item">Acerca de mí</a><i class="fas fa-chevron-right"></i></div>
+            <a href="#skills" class="dropdown-item">Skills<i class="fas fa-chevron-right"></i></a>
+            <a href="#projects" class="dropdown-item">Proyectos<i class="fas fa-chevron-right"></i></a>
+            <a href="#contacto" class="dropdown-item">Contacto<i class="fas fa-chevron-right"></i></a>
         </div>
     </navbar>
     <main>
     <section id="home">
-        <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
+        <a href="#about-me"><i class="fas fa-chevron-down" id="arrow"></i></a>
     </section>
     <section id="about-me">
             <div class="about-me">
@@ -42,55 +42,71 @@
             </div>   
     </section>
     <section id="skills" class="text-center">    
-        <div class="container-fluid fondo-skills">  
-            <div class="row mt-5">
-                <div class="col-6 text-left">
-                    <i class="fab fa-js-square"></i>
-                    <span>Java Script</span>
+        <div class="container-fluid fondo-skills">
+            <div class="row">
+                <div class="col-6 mitad-uno"> 
+                    <div class="row mt-5">
+                        <div class="col-12 text-left">
+                            <i class="fab fa-js-square"></i>
+                            <span>Java Script</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 text-left">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">                
+                        <div class="col-12 text-left">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">                
+                        <div class="col-12 text-left">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">                
+                        <div class="col-12 text-left">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 text-left">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML</span>
-                </div>
-            </div>
-            <div class="row mt-5">                
-                <div class="col-6 text-left">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS</span>
-                </div>
-                <div class="col-6 text-left">
-                    <i class="fab fa-bootstrap"></i>
-                    <span>Bootstrap</span>
-                </div>
-            </div>
-            <div class="row mt-5">              
-                <div class="col-6 text-left">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </div>
-                <div class="col-6 text-left">
-                    <img src="img/firebase.png">
-                    <span>Firebase</span>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-6 text-left">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node JS</span>
-                </div>
-                <div class="col-6 text-left">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
-                </div>
-            </div>                  
-            <div class="row mt-5">
-                <div class="col-6 text-left">
-                    <img src="img/xd.png">
-                    <span>Adobe XD</span>
-                </div>
-                <div class="col-6 text-left">
-                    <img src="img/agile.png">
-                    <span>SCRUM</span>
+                <div class="col-6 mitad-dos">
+                    <div class="row mt-5">
+                        <div class="col-12 text-left">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node JS</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">              
+                        <div class="col-12 text-left">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">              
+                        <div class="col-12 text-left">
+                            <img src="img/firebase.png">
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5">              
+                        <div class="col-12 text-left">
+                            <img src="img/xd.png">
+                            <span>Adobe XD</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5 mb-5"> 
+                        <div class="col-12 text-left">
+                            <img src="img/agile.png">
+                            <span>SCRUM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

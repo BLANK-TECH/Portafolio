@@ -1,12 +1,12 @@
 //ANIME
 const img = anime({
-    targets: '.photo',
-    translateX: 30,
+    targets: '#arrow',
+    translateY: 6,
     direction: 'alternate',
     loop: true,
     easing: 'easeInOutQuad',
     autoplay: false,
-    duration: 4000
+    duration: 2000
     
   });
 
