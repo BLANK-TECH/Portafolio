@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4f820322b0.js"></script>
-    <script src="anime.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Ivon_Garduño</title>
 </head>
-<body class="body">
+<body>
     <navbar id="navbar" class="fixed-top">
-        <i class="fas fa-bars" class="btn btn-secondary dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-        <img src="./img/logo.png" alt="logo" id="logo">
-        <div class="dropdown-menu" id="menu" aria-labelledby="dropdownMenu2">
-            <div class="item-menu"><a href="#home" class="dropdown-item">Home<i class="fas fa-chevron-right"></i></a></div>
-            <div class="item-menu"><a href="#about-me" class="dropdown-item">Acerca de mí</a><i class="fas fa-chevron-right"></i></div>
-            <a href="#skills" class="dropdown-item">Skills<i class="fas fa-chevron-right"></i></a>
-            <a href="#projects" class="dropdown-item">Proyectos<i class="fas fa-chevron-right"></i></a>
-            <a href="#contacto" class="dropdown-item">Contacto<i class="fas fa-chevron-right"></i></a>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars btn"></i>
         </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#about-me">Acerca de mí</a><i class="fas fa-chevron-right"></i></li>
+            <li><a href="#skills">Skills<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#projects">Proyectos<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="#contacto">Contacto<i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+        <div class="item-logo">
+            <img src="./img/logo.png" alt="logo" id="logo">
+        </div> 
     </navbar>
-    <main>
+<main>
     <section id="home">
         <a class="btn btn-cv ml-4" 
         href="https://drive.google.com/file/d/1vqpr1ifPOcNvmK_46u4wIEe1hFRCc1Bu/view?usp=sharing" 
