@@ -14,8 +14,8 @@
     width: 100%;
     height: 15%;
     display: flex;
-    background: rgba(73, 73, 73,0.7);
-    box-shadow: 0 0 7px 0 rgba(73, 73, 73,.7);
+    background: rgba(124, 124, 125,0.3);
+    box-shadow: 0 0 7px 0 rgba(124, 124, 125,.7);
 }
 
 #logo{
@@ -52,51 +52,23 @@
     background-position-x: 20%;
     /* background-attachment: fixed; */
     font-size: 1rem;
-    text-align: center;
-    padding-top: 450px;
+    /* text-align: left; */
+    padding-top: 476px;
+    border-bottom: solid 7px rgb(188, 57, 186);
     
 }
-#home .box-cv{
-    width: 70%;
-    height: 100px;
-    margin: auto;  
-}
-#home .div-cv{
-    width: 100%;
-    height: 100%;
-}
-#home .btn-cv{
-    margin-top:16%; 
+#home .btn-cv{ 
     color:rgba(205, 205, 205,0.6); 
     border:solid 1px rgba(205, 205, 205,0.5);
     /* font-weight: bold; */
 }
-#home .arrow{
-    color:white;
-    opacity:0.6;
-    text-decoration: none;
-    
-}
-
-
 #about-me{
     width: 100%;
     height: 568px;
-    background-color:#cdcdcd;
-    text-align: right;   
-    padding-top: 40px;
+    background-color:rgb(73, 73, 73);
+    text-align: center;   
+    padding-top: 80px;
     
-}
-
-.about-me{
-    width: 90%;
-    height: 80%;
-    margin-left: 0px;
-    margin-top: 17%;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    background: #181F17;
-     
 }
 
 #about-me img{
@@ -108,7 +80,7 @@
     width: 84%;
     text-align: justify;
     letter-spacing: 0.2px;
-    color: rgb(191, 185, 164);
+    color: white;
     /* opacity: 1; */
     font-size: 0.9rem;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -116,6 +88,8 @@
 }
 #text-aboutme span{
     font-style: italic;
+    font-weight: bold;
+    color:#ebc8ea;
 }
 
 #skills{
@@ -133,7 +107,7 @@
 }
 
 #skills .mitad-uno{
-    background-color: #181F17;
+    background-color: #060406;
 }
 
 #skills i{
@@ -185,7 +159,7 @@
     width: 100%;
     height: 140vh;
     padding-top: 15vh;
-    background-color:#48494a;
+    background-color:rgb(73, 73, 73);
 }
 
 #projects .tarjeta-wrap{
@@ -257,7 +231,7 @@
 #contacto{
     width: 100%;
     height: 90px;
-    background: rgb(31,38,29);
+    background: #060406;
     text-align: center;
     font-size: 1.6rem;
     padding-top: 5px;
