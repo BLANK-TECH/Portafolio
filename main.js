@@ -9,11 +9,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
 let menu = document.getElementById("navLinks");
 
-    const mostrarMenu = () => {
+document.querySelectorAll(".link-icon-one, .link-icon").forEach(element => {
+    element.addEventListener('click',(e)=>{
+        e.preventDefault();
         menu.classList.toggle("menuOpen");
-    }
+})
+})
+
+const mostrarMenu = () => {
+    menu.classList.toggle("menuOpen");
+}
 
 document.getElementById("hamburger").addEventListener("click", mostrarMenu);
