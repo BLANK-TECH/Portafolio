@@ -35,25 +35,25 @@
         target="_blank" role="button">Consulta mi CV</a>
     </div>
     </section>
-
     <section id="about-me">
-        <div class="container-fluid">
+        <div class="container">
+        <div class="container-fluid" id="about-mobile">
         <div class="row">
             <div class="col-12">
                 <img src="./img/ivon_foto[1] copia.png" alt="Ivon" class="photo">
             </div>
             </div>  
-            <p id="text-aboutme" class="mt-2"><span>Desarrolladora Web</span> apasionada por la programación y el reto mental.
+            <p id="text-aboutme" class="mt-2"><span>Desarrolladora Web</span> apasionada por la programación y el reto mental .
             De mente inquieta y entusiasta por el mundo Tech.</p>
         <div class="row mt-3">
             <div class="col-1"></div>
             <div class="col-5">
                 <img src="img/autoaprendizaje.png" class="diagrama">
-                <p class="soft">Auto-aprendizaje y rapidez</p>
+                <p class="soft">Auto-aprendizaje<br>y rapidez</p>
             </div>
             <div class="col-5">
                 <img src="img/liderazgo.png" class="diagrama">
-                <p class="soft">Liderazgo y trabajo en equipo</p>
+                <p class="soft">Liderazgo y trabajo<br>en equipo</p>
             </div>
             <div class="col-1"></div>
         </div> 
@@ -61,7 +61,7 @@
             <div class="col-1"></div>
             <div class="col-5">
                 <img src="img/agile.png" class="diagrama">
-                <p class="soft">Trabajo bajo metodología agil</p>
+                <p class="soft">Trabajo bajo<br>metodología agil</p>
             </div>
             <div class="col-5">
                 <img src="img/responsive.png" class="diagrama">
@@ -69,7 +69,44 @@
             </div>
             <div class="col-1"></div>
         </div>
-    </div>         
+    </div> 
+    
+        <div class="container-fluid" id="about-desk">
+            <div class="row mt-4">
+                <div class="col-1"></div>
+                <div class="col-6 mt-4">
+                    <img src="./img/ivon_foto[1] copia.png" alt="Ivon" class="photo mt-4">
+                    <p id="text-aboutme-desk" class="mt-4"><span>Desarrolladora Web</span> apasionada por la programación y el reto mental .
+                        De mente inquieta y entusiasta por el mundo Tech.</p>
+                </div>
+                <div class="col-5 mt-4">
+                    <div class="row mt-4">
+                        <div class="col-12 mt-4">
+                            <img src="img/autoaprendizaje.png" class="diagrama">
+                            <p class="soft">Auto-aprendizaje<br>y rapidez</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 mt-4">
+                            <img src="img/liderazgo.png" class="diagrama">
+                            <p class="soft">Liderazgo y trabajo<br>en equipo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3"></div>
+                <div class="col-4 mt-4">
+                    <img src="img/agile.png" class="diagrama">
+                    <p class="soft">Trabajo bajo<br>metodología agil</p>
+                </div> 
+                <div class="col-5 mt-4">
+                    <img src="img/responsive.png" class="diagrama">
+                    <p class="soft">Desarrollo<br>Responsive</p>
+                </div> 
+            </div>
+        </div> 
+    </div>                
     </section>
     <section id="skills" class="text-center">
         <div class="container">   
@@ -82,25 +119,25 @@
                             <span>Java Script</span>
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-5 m-skills">
                         <div class="col-12 text-left">
                             <i class="fab fa-html5"></i>
                             <span>HTML</span>
                         </div>
                     </div>
-                    <div class="row mt-5">                
+                    <div class="row mt-5 m-skills">                
                         <div class="col-12 text-left">
                             <i class="fab fa-css3-alt"></i>
                             <span>CSS</span>
                         </div>
                     </div>
-                    <div class="row mt-5">                
+                    <div class="row mt-5 m-skills">                
                         <div class="col-12 text-left">
                             <i class="fab fa-bootstrap"></i>
                             <span>Bootstrap</span>
                         </div>
                     </div>
-                    <div class="row mt-5">                
+                    <div class="row mt-5 m-skills">                
                         <div class="col-12 text-left">
                             <i class="fab fa-react"></i>
                             <span>React</span>
@@ -114,19 +151,19 @@
                             <span>Node JS</span>
                         </div>
                     </div>
-                    <div class="row mt-5">              
+                    <div class="row mt-5 m-skills">              
                         <div class="col-12 text-left">
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
                         </div>
                     </div>
-                    <div class="row mt-5">              
+                    <div class="row mt-5 m-skills">              
                         <div class="col-12 text-left">
                             <img src="img/firebase.png">
                             <span>Firebase</span>
                         </div>
                     </div>
-                    <div class="row mt-5">              
+                    <div class="row mt-5 m-skills">              
                         <div class="col-12 text-left">
                             <img src="img/mongodb.png">
                             <span>Mongodb</span>
@@ -150,13 +187,13 @@
                     <h6 class="card-subtitle mb-2 text-muted">Librería npm</h6>
                     <p class="card-text">Herramienta para Desarrolladores, usando Node.js, que lee y analiza archivos en formato Markdown, 
                         para verificar los links que contengan y reportar algunas estadísticas.</p>
-                    <a href="https://github.com/ivongarduno/MEX008-FE-md-link" target="_blank" class="card-link">GitHub</a>
-                    <a href="https://www.npmjs.com/package/blank-md-links" target="_blank" class="card-link">npm</a>
+                    <a href="https://github.com/ivongarduno/MEX008-FE-md-link" target="_blank" class="card-link btn">GitHub</a>
+                    <a href="https://www.npmjs.com/package/blank-md-links" target="_blank" class="card-link btn">npm</a>
                 </div>
             </div>
         </div>
         </div>
-        <div class="tarjeta-wrap">
+        <div class="tarjeta-wrap tarjeta-right">
             <div class="tarjeta">
                 <div class="card adelante labcar">
                     <i class="fas fa-undo-alt"></i>
@@ -166,9 +203,9 @@
                     <div class="card-body">
                         <h5 class="card-title">LabCar</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Landing page</h6>
-                        <p class="card-text">Desarrollada con HTML5, CSS3 y JavaScript</p>
-                        <a href="https://github.com/ivongarduno/Proyecto-LabCar" target="_blank" class="card-link">GitHub</a>
-                        <a href="https://ivongarduno.github.io/Proyecto-LabCar/index.html" target="_blank" class="card-link">Pages</a>
+                        <p class="card-text">Desarrollada con HTML5, CSS3 y JavaScript</p><br><br>
+                        <a href="https://github.com/ivongarduno/Proyecto-LabCar" target="_blank" class="card-link btn">GitHub</a>
+                        <a href="https://ivongarduno.github.io/Proyecto-LabCar/index.html" target="_blank" class="card-link btn">Pages</a>
                     </div>
                 </div>
             </div>
@@ -186,8 +223,8 @@
                         <p class="card-text">Interfaz para visualizar, ordenar y realizar cálculos
                                 estadísticos con Data almacenada en un JSON, utilizando HTML5, CSS Grid,
                                 JavaScript, npm y Jest para pruebas unitarias.</p>
-                        <a href="https://github.com/ivongarduno/Proyecto-LabCar" target="_blank" class="card-link">GitHub</a>
-                        <a href="https://ivongarduno.github.io/Proyecto-LabCar/index.html" target="_blank" class="card-link">Pages</a>
+                        <a href="https://github.com/ivongarduno/Proyecto-LabCar" target="_blank" class="card-link btn">GitHub</a>
+                        <a href="https://ivongarduno.github.io/Proyecto-LabCar/index.html" target="_blank" class="card-link btn">Pages</a>
                     </div>
                 </div>
             </div>

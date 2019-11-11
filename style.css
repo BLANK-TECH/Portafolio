@@ -6,15 +6,12 @@
     font-size: 16px;
     
 }
-
-
 #navbar{
     width: 100%;
-    height: 100px;
+    height: 85px;
     display: flex;
     background: rgba(6, 4, 6,0.4);
     box-shadow: 0 0 7px 0 rgba(124, 124, 125,.6);
-
 }
 
 #navbar .nav-links a{ 
@@ -72,7 +69,7 @@
 
 
 #navbar .hamburger .fas{
-    margin:25px;
+    margin:20px;
     font-size: 2rem;
     color: #707070;
 }
@@ -106,8 +103,11 @@
     height: 568px;
     background-color:rgb(73, 73, 73);
     text-align: center;   
-    padding-top: 105px;
+    padding-top: 95px;
     
+}
+#about-me #about-desk{
+    display:none;
 }
 #about-me .diagrama{
     width: 85%;
@@ -126,7 +126,7 @@
     text-align: justify;
     letter-spacing: 0.2px;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: 'Montserrat Alternates', sans-serif;
     margin:auto;
     
@@ -135,6 +135,7 @@
     font-style: italic;
     font-weight: bold;
     color:rgb(235, 200, 234);
+    font-size: 0.8rem;
 }
 
 #skills{
@@ -277,9 +278,32 @@
     #home, #about-me, #skills{
         height: 667px;
     }
-
+    #navbar{
+        height: 95px;
+    }
+    #navbar .hamburger .fas{
+        margin-top: 22px;
+        font-size: 2.3rem;
+    }
+    #navbar .nav-links{
+        margin-top: 95px; 
+    }
+    #navbar .nav-links a{
+        font-size:1.1rem;
+    }
+    #home #btn-cv{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    #about-me{  
+        padding-top: 100px;
+    }
     #about-me #text-aboutme{
         margin: 10px auto;
+        font-size: 1rem;
+    }
+    #text-aboutme span{
+        font-size: 1rem;
     }
     #about-me .diagrama{
         width: 75%;
@@ -322,6 +346,16 @@
     }
     #navbar .item-logo{
         height: 90%;
+    }
+    #navbar .nav-links{
+        margin-top: 110px; 
+    }
+    #navbar .nav-links li{
+        height: 40px;
+        margin: 20px;
+    }
+    #navbar .nav-links a{
+        font-size:1.3rem;
     }
     #about-me{
         padding-top: 115px;   
@@ -380,18 +414,159 @@
     }
     #navbar .hamburger .fas{
         margin-top: 37px;
+        margin-left: 37px;
         font-size: 4.5rem;
     }
     #navbar .item-logo{
         width: 40%;
-        height: 90%;
+        height: 100%;
     }
     #logo{
         width: 100%;
     }
+    #navbar .nav-links{
+        margin-top: 160px; 
+    }
+    #navbar .nav-links li{
+        height: 50px;
+        margin: 40px;
+    }
+    #navbar .nav-links a{
+        font-size:2rem;
+    }
+    #navbar .nav-links .fa-chevron-right{
+        font-size:2rem;
+    }
+    #about-me{
+        padding-top: 170px;   
+    }
+    #about-me div .photo{
+        width: 30%;
+    }
+    #about-me #text-aboutme{
+        margin-top: 20px;
+        font-size: 1.7rem;
+    }
+    #about-me .soft{
+        font-size:1.2rem;
+    }
+    #text-aboutme span{
+        font-size:1.7rem;
+    }
+    #about-me .diagrama{
+        width: 50%;
+        height: 130px;
+    }
+    #skills i{
+        font-size: 5rem;   
+    }
+    #skills img{
+        width: 5rem;
+        height: 5rem;
+    }
+    #skills span{
+        font-size: 2rem;
+    }
+    #projects .tarjeta-wrap{
+        width: 60%;
+        height: 330px;
+        margin: 40px auto 40px 90px;
+    }
+
+    #projects .tarjeta-right{
+        margin: 40px 90px 40px auto;
+    }
+
+    #projects .tarjeta-wrap .tarjeta .atras .card-body .card-text{
+        font-size: 1.3rem;
+    }
+    #projects .tarjeta-wrap .tarjeta .atras .card-link{
+        font-size: 1.3rem;
+        border:solid 2px rgba(205, 205, 205,0.5);
+    }
+    #contacto{
+        height: 150px;
+        padding-top: 10px;
+    }
+    #contacto p{
+        font-size:1.5rem;
+    }
+    #contacto i{
+        font-size: 3.5rem;
+    } 
+    #contacto a{
+        margin-right: 10px;
+    }
+
+}
+@media (height: 1366px){
+    #home, #about-me, #skills{
+        height: 1366px;
+    }
+    #navbar{
+        height: 190px;
+    }
+    #navbar .hamburger{
+        width: 60%;
+        height: 100%;
+    }
+    #navbar .hamburger .fas{
+        margin-top: 49px;
+        margin-left: 45px;
+        font-size: 4.5rem;
+    }
+    #navbar .nav-links{
+        margin-top: 190px; 
+    }
+    #navbar .nav-links li{
+        height: 70px;
+        margin: 40px;
+    }
+    #navbar .nav-links a{
+        font-size:2.5rem;
+    }
+    #navbar .nav-links .fa-chevron-right{
+        font-size:2.5rem;
+    }
+    #about-me #about-mobile{
+        display:none;
+    }
+    #about-me #about-desk{
+        display:block;
+    }
+    #about-me{   
+        padding-top: 200px;
+        
+    }
+    #about-me #about-desk .diagrama{
+        width: 180px;
+        height: 170px;
+    }
+    #about-me .soft{
+        font-size:1.5rem;
+    }
+    #about-me div .photo{
+        width: 60%;
+    }
+    #about-desk #text-aboutme-desk{
+        font-size: 2.3rem;
+        width: 85%;
+        text-align: justify;
+        letter-spacing: 0.2px;
+        color: white;
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin:auto;
+        
+    }
+    #about-desk #text-aboutme-desk span{
+        font-style: italic;
+        font-weight: bold;
+        color:rgb(235, 200, 234);
+        font-size: 2.3rem;
+    }
 }
 
-@media (min-width: 769px){
+@media (min-width: 1025px){
 
     #navbar .nav-links{
         display:flex;
