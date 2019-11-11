@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     
 }
 
+
 #navbar{
     width: 100%;
-    height: 15%;
+    height: 100px;
     display: flex;
     background: rgba(6, 4, 6,0.4);
     box-shadow: 0 0 7px 0 rgba(124, 124, 125,.6);
@@ -70,7 +72,7 @@
 
 
 #navbar .hamburger .fas{
-    margin:20px;
+    margin:25px;
     font-size: 2rem;
     color: #707070;
 }
@@ -78,8 +80,6 @@
 #navbar .nav-links .fa-chevron-right{
     font-size: 0.8rem;
 }
-
-
 
 #home{
     width: 100%;
@@ -91,15 +91,14 @@
     /* background-attachment: fixed; */
     font-size: 1rem;
     text-align: center;
-    padding-top: 70%;
-    border-bottom: solid 7px rgb(188, 57, 186);
-    
+    border-bottom: solid 7px rgb(188, 57, 186);  
 }
+
 
 #home #btn-cv{ 
     color:rgba(205, 205, 205,0.6); 
     border:solid 1px rgba(205, 205, 205,0.5);
-    margin-top:10%;
+    margin-top:80%;
     /* font-weight: bold; */
 }
 #about-me{
@@ -107,7 +106,7 @@
     height: 568px;
     background-color:rgb(73, 73, 73);
     text-align: center;   
-    padding-top: 92px;
+    padding-top: 105px;
     
 }
 #about-me .diagrama{
@@ -257,11 +256,14 @@
     height: 90px;
     background: #060406;
     text-align: center;
-    font-size: 1.6rem;
     padding-top: 5px;
 }
+#contacto i{
+    font-size: 1.5rem;
+    margin: 10px 10px;
+}
 #contacto p{
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: white;
 }
 
@@ -269,6 +271,124 @@
     text-decoration: none;
     color: white;
     margin-right: 5px;
+}
+
+@media (min-width: 375px){
+    #home, #about-me, #skills{
+        height: 667px;
+    }
+
+    #about-me #text-aboutme{
+        margin: 10px auto;
+    }
+    #about-me .diagrama{
+        width: 75%;
+        height: 85px;
+        margin-top:15px;
+    }
+    #skills i{
+        font-size: 3rem;   
+    }
+    
+    #skills img{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #skills span{
+        font-size: 0.9rem;
+    }
+    #projects .tarjeta-wrap{
+        width: 80%;
+        height: 210px;
+    }
+
+}
+@media (min-width: 414px){
+    #home, #about-me, #skills{
+        height: 736px;
+    }
+
+    #home #btn-cv{
+        font-size: 1.5rem;
+    }
+    #navbar{
+        width: 100%;
+        height: 110px;
+    }
+    #navbar .hamburger .fas{
+        margin-top: 30px;
+        font-size: 2.5rem;
+    }
+    #navbar .item-logo{
+        height: 90%;
+    }
+    #about-me{
+        padding-top: 115px;   
+    }
+    #about-me #text-aboutme{
+        margin-top: 15px;
+        font-size: 1.2rem;
+    }
+    #about-me .soft{
+        font-size:0.9rem;
+    }
+    #text-aboutme span{
+        font-size:1.2rem;
+    }
+    #about-me .diagrama{
+        width: 75%;
+        height: 95px;
+    }
+    #skills i{
+        font-size: 4rem;   
+    }
+    #skills img{
+        width: 4rem;
+        height: 4rem;
+    }
+    #skills span{
+        font-size: 1rem;
+    }
+    #projects .tarjeta-wrap{
+        width: 80%;
+        height: 220px;
+    }
+    #contacto{
+        height: 100px;
+    }
+    #contacto i{
+        font-size: 2rem;
+    } 
+}
+@media (min-width: 768px){
+    #home, #about-me, #skills{
+        height: 1024px;
+    }
+    #home #btn-cv{
+        font-size: 2.5rem;
+        margin-top:72%;
+        font-weight: 500;
+        border:solid 2px rgba(205, 205, 205,0.5);
+    }
+    #navbar{
+        height: 160px;
+    }
+    #navbar .hamburger{
+        width: 60%;
+        height: 100%;
+    }
+    #navbar .hamburger .fas{
+        margin-top: 37px;
+        font-size: 4.5rem;
+    }
+    #navbar .item-logo{
+        width: 40%;
+        height: 90%;
+    }
+    #logo{
+        width: 100%;
+    }
 }
 
 @media (min-width: 769px){
