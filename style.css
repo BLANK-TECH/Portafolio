@@ -110,7 +110,6 @@
 }
 #about-me .diagrama{
     width: 85%;
-    height: 85px;
     margin:auto;
 }
 #about-me .soft{
@@ -145,14 +144,14 @@
 }
 
 #skills i{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color:rgb(235, 200, 234);
     
 }
 
 #skills img{
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 2rem;
+    height: 2rem;
     /* box-shadow: 0 2px 2px 0 rgb(191, 185, 164,0.8); */
 }
 
@@ -255,17 +254,17 @@
 
 #contacto{
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     background: #060406;
     text-align: center;
     padding-top: 5px;
 }
 #contacto i{
-    font-size: 1.5rem;
-    margin: 10px 10px;
+    font-size: 1rem;
+    margin: 5px 5px;
 }
 #contacto p{
-    font-size: 1rem;
+    font-size: 0.6rem;
     color: white;
 }
 
@@ -305,7 +304,6 @@
     }
     #about-me .diagrama{
         width: 75%;
-        height: 85px;
         margin-top:15px;
     }
     #skills i{
@@ -323,6 +321,12 @@
     #projects .tarjeta-wrap{
         width: 80%;
         height: 210px;
+    }
+    #contacto i{
+        font-size: 1.5rem;
+    }
+    #contacto p{
+        font-size: 0.9rem;
     }
 
 }
@@ -364,10 +368,6 @@
     #text-aboutme span{
         font-size:1.2rem;
     }
-    #about-me .diagrama{
-        width: 75%;
-        height: 95px;
-    }
     #skills i{
         font-size: 4rem;   
     }
@@ -381,9 +381,6 @@
     #projects .tarjeta-wrap{
         width: 80%;
         height: 220px;
-    }
-    #contacto{
-        height: 100px;
     }
     #contacto i{
         font-size: 2rem;
@@ -475,7 +472,7 @@
         border:solid 2px rgba(205, 205, 205,0.5);
     }
     #contacto{
-        height: 150px;
+        /* height: 150px; */
         padding-top: 10px;
     }
     #contacto p{
@@ -526,8 +523,7 @@
         
     }
     #about-me #about-desk .diagrama{
-        width: 180px;
-        height: 170px;
+        width: 80%;
     }
     #about-me .soft{
         font-size:1.5rem;
@@ -658,6 +654,9 @@
         font-weight: 500;
         border:solid 2px rgba(205, 205, 205,0.5);
     }
+    #about-me{
+        padding-top:10%;
+    }
     #about-me #about-mobile{
         display:none;
     }
@@ -669,7 +668,7 @@
         width: 20%;
     }
     #about-desk #text-aboutme-desk{
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 75%;
         text-align: justify;
         letter-spacing: 0.2px;
@@ -682,7 +681,7 @@
         font-style: italic;
         font-weight: bold;
         color:rgb(235, 200, 234);
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     #skills{
         padding-top: 15%;
@@ -740,14 +739,28 @@
     #projects .content-all .content-img .content-details{
         position: relative;
         top: -380px;
-        width: 500px;
+        width: 600px;
+        height: 60%;
         margin:auto;
         padding:10px;
-        background: rgba(188, 57, 186,0.8);
-        color:white;
+        background: rgba(205, 205, 205,0.8);
+        color:black;
         text-align:center;
     }
     #projects .content-all .content-img .content-details .card-text{
-        font-size:1.2rem;
+        font-size:1.5rem;
+    }
+    /* #about-me .diagrama{
+        width: 65%;
+    } */
+    #about-me .diagrama{
+        width: 55%;
+        margin:auto;
+    }
+    #about-me div .photo{
+        width: 15%;
+    }
+    #contacto{
+        height: 15vh;
     }
 }
