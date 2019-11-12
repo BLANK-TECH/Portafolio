@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: content-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     
@@ -80,7 +80,7 @@
 
 #home{
     width: 100%;
-    height: 568px;
+    height: 100vh;
     background-image: url('./img/home.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,16 +91,15 @@
     border-bottom: solid 7px rgb(188, 57, 186);  
 }
 
-
 #home #btn-cv{ 
-    color:rgba(205, 205, 205,0.6); 
+    color:rgba(205, 205, 205,0.7); 
     border:solid 1px rgba(205, 205, 205,0.5);
-    margin-top:80%;
+    margin-top:50vh;
     /* font-weight: bold; */
 }
 #about-me{
     width: 100%;
-    height: 568px;
+    height: 100vh;
     background-color:rgb(73, 73, 73);
     text-align: center;   
     padding-top: 95px;
@@ -140,7 +139,7 @@
 
 #skills{
     width: 100%;
-    height: 568px;
+    height: 100vh;
     background-color: rgb(73, 73, 73);
     padding-top: 27%;
 }
@@ -161,10 +160,12 @@
     color:white;
     font-size: 0.8rem;
 }
-
+#projects .content-all{
+    display:none;
+}
 #projects{
     width: 100%;
-    height: 150vh;
+    height: fit-content;
     padding-top: 15vh;
     background-color: rgb(73, 73, 73);
 }
@@ -254,7 +255,7 @@
 
 #contacto{
     width: 100%;
-    height: 90px;
+    height: 100vh;
     background: #060406;
     text-align: center;
     padding-top: 5px;
@@ -275,9 +276,6 @@
 }
 
 @media (min-width: 375px){
-    #home, #about-me, #skills{
-        height: 667px;
-    }
     #navbar{
         height: 95px;
     }
@@ -329,10 +327,6 @@
 
 }
 @media (min-width: 414px){
-    #home, #about-me, #skills{
-        height: 736px;
-    }
-
     #home #btn-cv{
         font-size: 1.5rem;
     }
@@ -396,12 +390,8 @@
     } 
 }
 @media (min-width: 768px){
-    #home, #about-me, #skills{
-        height: 1024px;
-    }
     #home #btn-cv{
         font-size: 2.5rem;
-        margin-top:72%;
         font-weight: 500;
         border:solid 2px rgba(205, 205, 205,0.5);
     }
@@ -500,9 +490,6 @@
 
 }
 @media (height: 1366px){
-    #home, #about-me, #skills{
-        height: 1366px;
-    }
     #navbar{
         height: 190px;
     }
@@ -546,7 +533,7 @@
         font-size:1.5rem;
     }
     #about-me div .photo{
-        width: 60%;
+        width: 40%;
     }
     #about-desk #text-aboutme-desk{
         font-size: 2.3rem;
@@ -564,9 +551,59 @@
         color:rgb(235, 200, 234);
         font-size: 2.3rem;
     }
+    #skills i{
+        font-size: 6rem;   
+    }
+    #skills img{
+        width: 6rem;
+        height: 6rem;
+    }
+    #skills span{
+        font-size: 3rem;
+    }
+    #sikills .text-left{
+        margin-left: 20px;
+    }
+    #projects .tarjeta-wrap{
+        width: 60%;
+        height: 400px;
+        margin: 50px auto 50px 100px;
+    }
+    #projects .tarjeta-right{
+        margin: 50px 100px 50px auto;
+    }
+
+    #projects .tarjeta-wrap .tarjeta .atras .card-body .card-text{
+        font-size: 1.7rem;
+    }
+    #projects .tarjeta-wrap .tarjeta .atras .card-body .card-title, .card-subtitle{
+        font-size: 2rem;
+    }
+    #projects .tarjeta-wrap .tarjeta .atras .card-link{
+        font-size: 1.5rem;
+        border:solid 2px rgba(205, 205, 205,0.5);
+    }
+    #contacto{
+        height: 170px;
+        padding-top: 15px;
+    }
+    #contacto p{
+        font-size:2rem;
+    }
+    #contacto i{
+        font-size: 4rem;
+    } 
+    #contacto a{
+        margin-right: 15px;
+    }
 }
 
 @media (min-width: 1025px){
+
+    #navbar{
+        width: 100%;
+        height: 15%;
+    }
 
     #navbar .nav-links{
         display:flex;
@@ -575,10 +612,19 @@
         height: 100%;
         justify-content: space-around;
         align-items: center;
-        font-size: 20px;
         transform: translate(0%,0%);
         margin-top: 0%;
         background: transparent;
+    }
+    #navbar #navLinks li{
+        height: 100%;
+        padding: 20px 20px;
+    }
+    #navbar #navLinks li a{
+        font-size:25px;
+    }
+    #navbar #navLinks li:hover{
+        background-color: rgba(124, 124, 125,.6);
     }
     #navbar .item-logo{
         display:flex;
@@ -588,7 +634,7 @@
         align-items: center;
     }
     #navbar .item-logo #logo{
-        width: 70%;
+        width: 50%;
         /* margin-left: 30px; */
     }
     #navbar .hamburger{
@@ -605,7 +651,103 @@
     }
     #home{
         background-image: url('./img/home-desktop.jpg');
-        height: 950px;
+        height: 100vh;
+    }
+    #home #btn-cv{
+        font-size: 2rem;
+        font-weight: 500;
+        border:solid 2px rgba(205, 205, 205,0.5);
+    }
+    #about-me #about-mobile{
+        display:none;
+    }
+    #about-me #about-desk{
+        display:block;
+        height:100vh;
+    }
+    #about-me div .photo{
+        width: 20%;
+    }
+    #about-desk #text-aboutme-desk{
+        font-size: 2rem;
+        width: 75%;
+        text-align: justify;
+        letter-spacing: 0.2px;
+        color: white;
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin:auto;
+        
+    }
+    #about-desk #text-aboutme-desk span{
+        font-style: italic;
+        font-weight: bold;
+        color:rgb(235, 200, 234);
+        font-size: 2rem;
+    }
+    #skills{
+        padding-top: 15%;
+    }
+    #projects{
+        height: 100vh;
+    }
+    #projects .tarjeta-wrap{
+        display: none;
+    }
+    #projects .content-all{
+        width: 800px;
+        height: 500px;
+        position: relative;
+        display:flex;
+        margin:auto;
+        margin-top: 10%;
+        perspective: 800px;
+    }
+    #projects .content-all .content-img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left:0px;
+        display:none;
+    }
+    #projects .content-all #slider-mdLinks{
+        display:block;
+    }
+    #projects .content-all #slider-labcar{
+        background-color: #f7b617;
     }
 
+    #projects .content-all .content-img img{
+        width: 100%;
+        height: 100%;
+    }
+    #projects .content-all .content-img .fa-chevron-left{
+        position: absolute;
+        margin-top:250px;
+        left:20px;
+        font-size:40px;
+        text-decoration: none;
+        color:white;
+    }
+    #projects .content-all .content-img .fa-chevron-right{
+        position: absolute;
+        margin-top:250px;
+        left:760px;
+        font-size:40px;
+        text-decoration: none;
+        color:white;
+    }
+    #projects .content-all .content-img .content-details{
+        position: relative;
+        top: -380px;
+        width: 500px;
+        margin:auto;
+        padding:10px;
+        background: rgba(188, 57, 186,0.8);
+        color:white;
+        text-align:center;
+    }
+    #projects .content-all .content-img .content-details .card-text{
+        font-size:1.2rem;
+    }
 }
