@@ -27,6 +27,7 @@ document.getElementById("hamburger").addEventListener("click", mostrarMenu);
 const sliderPokedex = document.getElementById('slider-pokedex');
 const sliderLabcar = document.getElementById('slider-labcar');
 const sliderMdLinks = document.getElementById('slider-mdLinks');
+const sliderVoltio = document.getElementById('slider-voltio');
 
 document.querySelectorAll('a[href^="#slider-pokedex"]').forEach(element=>{
     element.addEventListener("click",(e)=>{
@@ -34,6 +35,7 @@ document.querySelectorAll('a[href^="#slider-pokedex"]').forEach(element=>{
         sliderPokedex.style.display = "block";
         sliderMdLinks.style.display = "none";
         sliderLabcar.style.display = "none";
+        sliderVoltio.style.display = "none";
     });
 });
 document.querySelectorAll('a[href^="#slider-mdLinks"]').forEach(element=>{
@@ -42,6 +44,7 @@ document.querySelectorAll('a[href^="#slider-mdLinks"]').forEach(element=>{
         sliderMdLinks.style.display = "block";
         sliderLabcar.style.display = "none";
         sliderPokedex.style.display = "none";
+        sliderVoltio.style.display = "none";
     });
 });
 document.querySelectorAll('a[href^="#slider-labcar"]').forEach(element=>{
@@ -50,6 +53,16 @@ document.querySelectorAll('a[href^="#slider-labcar"]').forEach(element=>{
         sliderLabcar.style.display = "block";
         sliderPokedex.style.display = "none";
         sliderMdLinks.style.display = "none";
+        sliderVoltio.style.display = "none";
+    });
+});
+document.querySelectorAll('a[href^="#slider-voltio"]').forEach(element=>{
+    element.addEventListener("click",(e)=>{
+        e.preventDefault();
+        sliderLabcar.style.display = "none";
+        sliderPokedex.style.display = "none";
+        sliderMdLinks.style.display = "none";
+        sliderVoltio.style.display = "block";
     });
 });
 
