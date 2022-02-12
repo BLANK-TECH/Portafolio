@@ -12,8 +12,10 @@
   }
 }
 
-body{
-    background-color: #000;
+$color-rosa: #fe98fe;
+
+body {
+  background-color: #000;
 }
 
 header {
@@ -23,7 +25,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 20%;
-//   border-bottom: solid 7px #bc39ba;
+  //   border-bottom: solid 7px #bc39ba;
   background-attachment: fixed;
 
   @include lg {
@@ -41,11 +43,10 @@ header {
       align-items: center;
     }
     p {
-      color: #fde698;
       margin: 0 0 20% 10%;
       font-size: 40px;
       font-weight: bold;
-      color: #fe98fe;
+      color: $color-rosa;
 
       @include lg {
         margin-bottom: 0;
@@ -159,7 +160,7 @@ header {
 #about-me {
   width: 100%;
   height: 100vh;
-//   background-color: rgb(73, 73, 73);
+  //   background-color: rgb(73, 73, 73);
   text-align: center;
   padding-top: 95px;
 }
@@ -196,7 +197,7 @@ header {
 #skills {
   width: 100%;
   height: 100vh;
-//   background-color: rgb(73, 73, 73);
+  //   background-color: rgb(73, 73, 73);
   padding-top: 20%;
   padding-bottom: 20%;
 }
@@ -223,7 +224,7 @@ header {
   //   width: 100%;
   height: fit-content;
   padding: 25% 0;
-//   background-color: rgb(73, 73, 73);
+  //   background-color: rgb(73, 73, 73);
 }
 
 #projects .tarjeta-wrap {
@@ -322,10 +323,14 @@ header {
 
 #contacto {
   width: 100%;
-  height: 10vh;
-  background: #060406;
+  //   height: 10vh;
   text-align: center;
   padding-top: 5px;
+
+  .container-links {
+    background: #fe98fe;
+    padding: 50px 0;
+  }
 }
 #contacto i {
   font-size: 1rem;
@@ -333,12 +338,12 @@ header {
 }
 #contacto p {
   font-size: 0.6rem;
-  color: white;
+  color: black;
 }
 
 #contacto a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin-right: 5px;
 }
 

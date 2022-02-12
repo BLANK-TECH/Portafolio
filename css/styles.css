@@ -29,7 +29,6 @@ header {
       header .home-container {
         align-items: center; } }
     header .home-container p {
-      color: #fde698;
       margin: 0 0 20% 10%;
       font-size: 40px;
       font-weight: bold;
@@ -261,10 +260,11 @@ header {
 
 #contacto {
   width: 100%;
-  height: 10vh;
-  background: #060406;
   text-align: center;
   padding-top: 5px; }
+  #contacto .container-links {
+    background: #fe98fe;
+    padding: 50px 0; }
 
 #contacto i {
   font-size: 1rem;
@@ -272,11 +272,11 @@ header {
 
 #contacto p {
   font-size: 0.6rem;
-  color: white; }
+  color: black; }
 
 #contacto a {
   text-decoration: none;
-  color: white;
+  color: black;
   margin-right: 5px; }
 
 @media (min-width: 360px) {
